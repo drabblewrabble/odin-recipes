@@ -1,9 +1,9 @@
 *{
     color: beige;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 body {
-    background-color: rgb(185, 169, 169);
+    background-color: rgb(172, 148, 148);
 }
 #header-main{
     color: blanchedalmond;
@@ -11,15 +11,42 @@ body {
     text-align: center;
 }
 
-img {
+.clickable-box{
+    float: center;
+    position: relative;
     width: 300px;
     height: auto;
     border-radius: 10px;
-    display:block;
-    margin-left: auto;
-    margin-right: auto;
-    opacity: 0.5;
+    margin: auto;
 }
-img:hover{
+
+img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    } 
+
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+    backdrop-filter: blur(5px);
+}
+
+.overlay:hover {
     opacity: 1;
 }
+
+

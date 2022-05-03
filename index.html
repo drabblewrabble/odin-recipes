@@ -6,32 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+    </style>
 </head>
 <body>
     <h1 id="header-main">Best Breakfast and Brunch Recipes to Keep Your Significant Other Happy!</h1>
     
-    <div class="recipe-link">
-        <a id="tortilla" href="./recipes/spanishtortilla.html" target="_blank">
-            <p class="dish-pic">
-                <img src ="./recipes/images/tortilla.jpg">
-                <p class="dish-name">Tortilla de Potata</p>
-            </p>   
-        </a>
-    </div>
     
-    <a id="toast" href="./recipes/frenchtoast.html" target="_blank">
-        <p class="dish-pic">
-            <img src="./recipes/images/frenchtoast.jpg"
-            >
-        </p>
-    </a>
-        
-    <a id="latte" href="./recipes/maplelatte.html" target="_blank">
-        <p class="dish-pic">
-            <img src="./recipes/images/maplelatte.jpg"
-            >
-        </p>
-    </a>
+    
+    <div class="clickable-box">   
+        <a id="tortilla" href="./recipes/spanishtortilla.html" target="_blank">
+            <img src ="./recipes/images/tortilla.jpg"> 
+            <div class="overlay">
+                <p>Spanish Tortilla</p>
+            </div>
+        </a>
+    </div>  
 
+    <div class="clickable-box">   
+        <a id="latte" href="./recipes/maplelatte.html" target="_blank">
+            <img src ="./recipes/images/maplelatte.jpg"> 
+            <div class="overlay">
+                <p>Maple Latte</p>
+            </div>
+        </a>
+    </div>  
+
+    <div class="clickable-box">   
+        <a id="toast" href="./recipes/frenchtoast.html" target="_blank">
+            <img src ="./recipes/images/frenchtoast.jpg"> 
+            <div class="overlay">
+                <p>French Toast</p>
+            </div>
+        </a>
+    </div> 
+</a>
 </body>
 </html>
